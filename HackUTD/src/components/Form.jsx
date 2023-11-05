@@ -157,7 +157,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup1 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Gross Monthly Income.
+        The total earnings before any deductions, used for financial assessment and budgeting.
         </div>
           </label>
           <input
@@ -195,7 +195,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup2 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Credit Card Payment.
+        A financial transaction in which a cardholder repays borrowed money or charges made on their credit card, helping to maintain a good credit history and avoid interest fees.
         </div>
           </label>
           <input
@@ -228,7 +228,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup3 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Car Payment.
+        A monthly amount paid to a lender or dealership as part of an auto loan, allowing individuals to finance the purchase of a vehicle over time.
         </div>
           </label>
           <input
@@ -259,7 +259,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup4 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Student Loan Payment.
+        A regular monthly amount paid by a borrower to repay the money borrowed for education, typically after completing studies or during a grace period.
         </div>
           </label>
           <input
@@ -292,7 +292,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup5 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Apprasied Value.
+          The estimated worth of a property or item determined by a professional appraiser, often used for real estate, insurance, or taxation purposes.
         </div>
           </label>
           <input
@@ -325,7 +325,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup6 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Down Payment.
+        An initial payment made when purchasing an item, typically a percentage of the total cost, especially common in real estate, to secure a loan or purchase agreement.
         </div>
           </label>
           <input
@@ -356,7 +356,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup7 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Loan Amount.
+          The total sum borrowed from a lender, which a borrower is obligated to repay with interest according to the terms of a loan agreement.
         </div>
           </label>
           <input
@@ -390,7 +390,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup8 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Monthly Mortgage Payment.
+          The regular installment paid by a homeowner to a lender to repay a home loan, typically consisting of both principal and interest.
         </div>
           </label>
           <input
@@ -423,7 +423,7 @@ const [data, setData] = useState([
         </span>
         {' )'}
         <div className="popup9 absolute bg-white border p-2 rounded-md text-sm shadow-md hidden text-black">
-          This is a short explanation of Credit Score.
+          A numerical representation of a person's creditworthiness, calculated based on their credit history, which is used by lenders to assess the risk of lending money to that individual.
         </div>
           </label>
           <input
@@ -442,19 +442,19 @@ const [data, setData] = useState([
           />
         </div>
 
-        <div className="text-center mt-4">
+        <div className="flex flex-col items-center">
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
+          className="relative bg-transparent text-white border border-white py-2 px-4 rounded-md hover:bg-gray-400 hover:border-gray-400 transition-colors duration-300 transform hover:scale-105 mt-2"  // Reduce the top margin to mt-2
         >
           Submit
         </button>
-        </div>
+      </div>
       </form>
       <button
         type="Compare"
         onClick={handleCompareClick}
-        className="fixed right-20 top-1/2 transform -translate-y-1/2 bg-cyan-500 hover:bg-cyan-600 rounded-full w-40 h-40 text-white flex items-center justify-center transition-transform duration-300"
+        className="fixed right-20 top-1/2 transform -translate-y-1/2 bg-cyan-500 hover:bg-cyan-600 outline rounded-full w-40 h-40 text-white flex items-center justify-center transition-transform duration-300"
       >
         <img src={BarChart} />
       </button>
