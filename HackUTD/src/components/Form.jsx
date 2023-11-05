@@ -448,6 +448,7 @@ const [data, setData] = useState([
         >
           Submit
         </button>
+        </div>
       </form>
       <button
           type="Compare"
