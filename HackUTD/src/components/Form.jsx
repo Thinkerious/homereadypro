@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Slider from "./Slider";
+import BarChart from "./BarChart.png";
 
 function Form({ formData, setFormData }) {
 
@@ -451,12 +452,13 @@ const [data, setData] = useState([
         </div>
       </form>
       <button
-          type="Compare"
-          onClick={handleCompareClick}
-          className="relative bg-transparent text-white border border-white py-2 px-4 rounded-md hover:bg-gray-400 hover:border-gray-400 transition-colors duration-300 transform hover:scale-105 mt-2"  // Reduce the top margin to mt-2
-          >
-            Compare
-        </button>
+        type="Compare"
+        onClick={handleCompareClick}
+        className="fixed right-20 top-1/2 transform -translate-y-1/2 bg-cyan-500 hover:bg-cyan-600 rounded-full w-40 h-40 text-white flex items-center justify-center transition-transform duration-300"
+      >
+        <img src={BarChart} />
+      </button>
+        
 
       <br/>
       <h1 className="approval"></h1>

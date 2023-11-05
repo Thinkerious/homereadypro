@@ -89,7 +89,7 @@ function Chat() {
             scrollBehavior="smooth"
             typingIndicator={
               isTyping ? (
-                <TypingIndicator content="Your AI assistant is typing" />
+                <TypingIndicator content="Your AI assistant is here to help" />
               ) : null
             }
           >
